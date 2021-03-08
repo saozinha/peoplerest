@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class PersonInput {
 
-    private String name;
+    private String firstName;
 
     private String lastName;
 

@@ -9,7 +9,7 @@ public class PersonMapper {
 
     public static Person to(PersonInput personInput) {
         final var person = new Person();
-        person.setName(personInput.getName());
+        person.setFirstName(personInput.getFirstName());
         person.setCpf(personInput.getCpf());
         person.setLastName(personInput.getLastName());
         person.setBirthDate(personInput.getBirthDate());
@@ -19,8 +19,8 @@ public class PersonMapper {
     public static PersonOutput toPersonOutput(Person person) {
         final var personOutput = new PersonOutput();
         personOutput.setId(person.getId());
-        personOutput.setName(person.getName());
-        personOutput.setName(person.getName());
+        personOutput.setFirstName(person.getFirstName());
+        personOutput.setLastName(person.getLastName());
         personOutput.setCpf(person.getCpf());
         personOutput.setBirthDate(person.getBirthDate());
         return personOutput;
