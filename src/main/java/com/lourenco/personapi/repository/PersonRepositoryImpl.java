@@ -8,7 +8,7 @@ import java.util.Optional;
 public abstract class PersonRepositoryImpl implements PersonRepository {
 
     @Override
-    public Optional<Person> findByName(String name) {
+    public Optional<Person> findByFirstName(String name) {
         return Optional.empty();
     }
 }

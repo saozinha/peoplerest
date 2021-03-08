@@ -9,7 +9,7 @@ import java.util.Optional;
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Long> {
 
-    Optional<Person> findByName(String name);
+    Optional<Person> findByFirstName(String firstName);
 
     Optional<Person>  findByCpf(String cpf);
 }
